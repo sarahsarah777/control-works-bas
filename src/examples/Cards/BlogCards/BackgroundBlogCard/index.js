@@ -10,6 +10,9 @@
 
 */
 
+//Icons
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
 // react-router components
 import { Link } from "react-router-dom";
 
@@ -78,7 +81,7 @@ function BackgroundBlogCard({ image, title, description, action }) {
               sx={cardActionStyles}
             >
               {action.label}
-              <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+              <ArrowForwardIcon/>
             </MKTypography>
           ) : (
             <MKTypography
@@ -93,7 +96,7 @@ function BackgroundBlogCard({ image, title, description, action }) {
               sx={cardActionStyles}
             >
               {action.label}
-              <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+              <ArrowForwardIcon/>
             </MKTypography>
           )}
         </MKBox>

@@ -80,7 +80,7 @@ function Contact() {
             Contact Us
           </MKTypography>
           <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-          At ControlWorks BAS, we're here to help you unlock the potential of your building with a customized Building Automation System (BAS) solution. We invite you to get in touch and discuss your project.
+          At ControlWorks BAS, we're here to help you unlock the potential of your building with a customized solution. We have two locations for your convenience: Chino, California and Las Vegas, Nevada. We invite you to get in touch and discuss your project.
           </MKTypography>
         </Grid>
       </Container>

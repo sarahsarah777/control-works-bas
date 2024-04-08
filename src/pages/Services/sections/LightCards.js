@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 /**
 =========================================================
 * ControlWorks - v0.1.0
@@ -12,10 +13,10 @@
 
 
 // @mui icons
-import DesignServicesIcon from '@mui/icons-material/DesignServices';
-import ConstructionIcon from '@mui/icons-material/Construction';
-import SupportAgentIcon from '@mui/icons-material/SupportAgent';
-import SchoolIcon from '@mui/icons-material/School';
+import EnergySavingsLeafIcon from '@mui/icons-material/EnergySavingsLeaf';
+import SecurityIcon from '@mui/icons-material/Security';
+import LightbulbIcon from '@mui/icons-material/Lightbulb';
+import HvacIcon from '@mui/icons-material/Hvac';
 
 // @mui material components
 import Container from "@mui/material/Container";
@@ -27,29 +28,12 @@ import MKTypography from "../../../components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultInfoCard from "../../../examples/Cards/InfoCards/DefaultInfoCard";
-import CenteredBlogCard from "../../../examples/Cards/BlogCards/CenteredBlogCard";
 
-// Images
-import panel from "../../../assets/images/services/panel.png";
 
 function LightCards() {
   return (
-    <MKBox component="section" py={12}>
+    <MKBox component="section" pt={12}  pb={12}>
       <Container>
-        <Grid container spacing={3} alignItems="center">
-        <Grid item xs={12} lg={4} sx={{ mr: "auto", mt: { xs: 3, lg: 0 } }}>
-            <CenteredBlogCard
-              image={panel}
-              title="Tailored for You and Your Technology"
-              description="At ControlWorks BAS, we understand that a one-size-fits-all approach doesn't work in building automation. That's why we offer a variety of leading BAS platforms to ensure your system seamlessly integrates with your existing infrastructure and delivers the results you need."
-              action={{
-                type: "internal",
-                route: "../pages/contact",
-                color: "info",
-                label: "find out more",
-              }}
-            />
-          </Grid>
           <Grid item xs={12} lg={6}>
             <Grid container justifyContent="flex-start">
               <Grid item xs={12} md={6}>
@@ -59,9 +43,9 @@ function LightCards() {
                       display="block"
                       variant="h3"
                       textGradient
-                    ><DesignServicesIcon color="primary"/></MKTypography>}
-                    title="Design & Engineering"
-                    description="Our experienced engineers design a customized BAS solution that integrates seamlessly with your existing HVAC, lighting, security, and other systems."
+                    ><HvacIcon color="primary"/></MKTypography>}
+                    title="HVAC Optimization"
+                    description="Gain precise control over heating, ventilation, and air conditioning systems to ensure occupant comfort while minimizing energy consumption."
                   />
                 </MKBox>
               </Grid>
@@ -72,9 +56,9 @@ function LightCards() {
                       display="block"
                       variant="h3"
                       textGradient
-                    ><ConstructionIcon color="primary"/></MKTypography>}
-                    title="Installation"
-                    description="Our certified technicians skillfully install your BAS hardware and software, ensuring a smooth and efficient process."
+                    ><LightbulbIcon color="primary"/></MKTypography>}
+                    title="Lighting Control"
+                    description="Implement intelligent lighting systems that automatically adjust based on occupancy and natural light, creating a more energy-efficient environment."
                   />
                 </MKBox>
               </Grid>
@@ -85,9 +69,9 @@ function LightCards() {
                       display="block"
                       variant="h3"
                       textGradient
-                    ><SupportAgentIcon color="primary"/></MKTypography>}
-                    title="Maintenance & Support"
-                    description="We offer comprehensive preventative maintenance plans to identify and address potential issues before they disrupt your operations."
+                    ><SecurityIcon color="primary"/></MKTypography>}
+                    title="Security & Access Control"
+                    description="Integrate your BAS with security systems for comprehensive building management and enhanced security measures."
                   />
                 </MKBox>
               </Grid>
@@ -98,15 +82,14 @@ function LightCards() {
                       display="block"
                       variant="h3"
                       textGradient
-                    ><SchoolIcon color="primary"/></MKTypography>}
-                    title="Training"
-                    description="We offer training programs to empower your staff to utilize the BAS effectively and maximize its potential."
+                    ><EnergySavingsLeafIcon color="primary"/></MKTypography>}
+                    title="Energy Management"
+                    description="Gain valuable insights into your building's energy consumption and identify opportunities for significant cost savings."
                   />
                 </MKBox>
               </Grid>
             </Grid>
           </Grid>
-        </Grid>
       </Container>
     </MKBox>
   );

@@ -72,9 +72,9 @@ function Team() {
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
                 image={profile}
-                name="Darren Stevens"
+                name="Dave Luithle"
                 position={{ color: "info", label: "Project Manager" }}
-                description="darrens@controlworksbas.com"
+                description="davidl@controlworksbas.com"
               />
             </MKBox>
           </Grid>
@@ -82,9 +82,9 @@ function Team() {
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
                 image={profile}
-                name="Shawn Goddard"
-                position={{ color: "info", label: "Lead Technician / Programmer" }}
-                description="shawng@controlworksbas.com"
+                name="Ben Swanson"
+                position={{ color: "info", label: "Sales" }}
+                description="bens@controlworksbas.com"
               />
             </MKBox>
           </Grid>

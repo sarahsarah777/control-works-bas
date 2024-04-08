@@ -26,9 +26,9 @@ import tridium from "../../../assets/images/solutions/tridium.png";
 
 function Logos() {
   return (
-    <MKBox component="section" pb={8}>
+    <MKBox component="section">
       <Container>
-        <Grid container spacing={3} sx={{ mt: 12 }}>
+        <Grid container spacing={3} sx={{ mt: 4 }}>
           <Grid item xs={6} md={6} lg={3}>
             <MKBox component="img" src={siemens} alt="coinbase" width="100%" opacity={0.7} />
           </Grid>

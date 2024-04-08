@@ -50,31 +50,31 @@ import Contact from "./layouts/pages/contact";
 const routes = [
   {
     name: "home",
-    route: "/pages/home",
+    route: "/home",
     component: <Home />,
     icon: <HomeIcon/>,
   },
   {
     name: "services",
-    route: "/pages/services",
+    route: "/services",
     component: <Services />,
     icon: <HomeRepairServiceIcon/>,
   },
   {
     name: "solutions",
-    route: "/pages/solutions",
+    route: "/solutions",
     component: <Solutions />,
     icon: <EmojiObjectsIcon/>,
   },
   {
     name: "about",
-    route: "/pages/about",
+    route: "/about",
     component: <About />,
     icon: <PeopleAltIcon/>,
   },
   {
     name: "contact",
-    route: "/pages/contact",
+    route: "/contact",
     component: <Contact />,
     icon: <PermContactCalendarIcon/>,
   },

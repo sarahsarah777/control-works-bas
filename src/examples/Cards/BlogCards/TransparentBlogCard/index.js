@@ -13,6 +13,9 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+//Icons
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
 // react-router components
 import { Link } from "react-router-dom";
 
@@ -27,6 +30,8 @@ import MuiLink from "@mui/material/Link";
 // Material Kit 2 React components
 import MKBox from "../../../../components/MKBox";
 import MKTypography from "../../../../components/MKTypography";
+
+
 
 function TransparentBlogCard({ image, title, description, action }) {
   const cardActionStyles = {
@@ -118,7 +123,7 @@ function TransparentBlogCard({ image, title, description, action }) {
             sx={cardActionStyles}
           >
             {action.label}
-            <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+            <ArrowForwardIcon />
           </MKTypography>
         ) : (
           <MKTypography
@@ -133,7 +138,7 @@ function TransparentBlogCard({ image, title, description, action }) {
             sx={cardActionStyles}
           >
             {action.label}
-            <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+            <ArrowForwardIcon />
           </MKTypography>
         )}
       </MKBox>

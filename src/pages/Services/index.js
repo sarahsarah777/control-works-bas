@@ -25,7 +25,10 @@ import DefaultNavbar from "../../examples/Navbars/DefaultNavbar";
 import SimpleFooter from "../../examples/Footers/SimpleFooter";
 
 // About Us page sections
+
+import InfoCard from "./sections/InfoCard";
 import LightCards from "./sections/LightCards";
+import Logos from "./sections/Logos";
 
 // Routes
 import routes from "../../routes";
@@ -93,7 +96,9 @@ function Services() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <LightCards />
+        <InfoCard />
+        <Logos />
+        <LightCards/>
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <SimpleFooter content={footerRoutes} />

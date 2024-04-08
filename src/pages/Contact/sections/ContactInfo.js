@@ -13,6 +13,11 @@ import { useState } from 'react';
 import Swal from "sweetalert2";
 import emailjs from '@emailjs/browser';
 
+// icons
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import EmailIcon from '@mui/icons-material/Email';
+import BusinessIcon from '@mui/icons-material/Business';
+
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -103,9 +108,19 @@ function Contact() {
                     <MKTypography variant="body2" color="white" opacity={0.8} mb={3}>
                       Fill up the form and our Team will get back to you within 24 hours.
                     </MKTypography>
+                    <MKTypography
+                        component="span"
+                        variant="button"
+                        color="white"
+                        opacity={0.8}
+                        ml={2}
+                        fontWeight="bold"
+                      >
+                        Chino, California
+                      </MKTypography>
                     <MKBox display="flex" p={1}>
                       <MKTypography variant="button" color="white">
-                        <i className="fas fa-phone" />
+                        <LocalPhoneIcon/>
                       </MKTypography>
                       <MKTypography
                         component="span"
@@ -120,7 +135,63 @@ function Contact() {
                     </MKBox>
                     <MKBox display="flex" color="white" p={1}>
                       <MKTypography variant="button" color="white">
-                        <i className="fas fa-envelope" />
+                        <EmailIcon />
+                      </MKTypography>
+                      <MKTypography
+                        component="span"
+                        variant="button"
+                        color="white"
+                        opacity={0.8}
+                        ml={2}
+                        fontWeight="regular"
+                      >
+                        sales@controlworksbas.com
+                      </MKTypography>
+                    </MKBox>
+                    <MKBox display="flex" color="white" p={1} mb={2}>
+                      <MKTypography variant="button" color="white">
+                        <BusinessIcon/>
+                      </MKTypography>
+                      <MKTypography
+                        component="span"
+                        variant="button"
+                        color="white"
+                        opacity={0.8}
+                        ml={2}
+                        fontWeight="regular"
+                      >
+                        13720 Mountain Ave Chino, CA 91710 
+                      </MKTypography>
+                    </MKBox>
+
+                    <MKTypography
+                        component="span"
+                        variant="button"
+                        color="white"
+                        opacity={0.8}
+                        ml={2}
+                        fontWeight="bold"
+                      >
+                        Las Vegas, Nevada
+                      </MKTypography>
+                    <MKBox display="flex" p={1}>
+                      <MKTypography variant="button" color="white">
+                        <LocalPhoneIcon/>
+                      </MKTypography>
+                      <MKTypography
+                        component="span"
+                        variant="button"
+                        color="white"
+                        opacity={0.8}
+                        ml={2}
+                        fontWeight="regular"
+                      >
+                        (702) 227-1760
+                      </MKTypography>
+                    </MKBox>
+                    <MKBox display="flex" color="white" p={1}>
+                      <MKTypography variant="button" color="white">
+                        <EmailIcon />
                       </MKTypography>
                       <MKTypography
                         component="span"
@@ -135,7 +206,7 @@ function Contact() {
                     </MKBox>
                     <MKBox display="flex" color="white" p={1}>
                       <MKTypography variant="button" color="white">
-                        <i className="fas fa-map-marker-alt" />
+                        <BusinessIcon/>
                       </MKTypography>
                       <MKTypography
                         component="span"
@@ -145,9 +216,11 @@ function Contact() {
                         ml={2}
                         fontWeight="regular"
                       >
-                        13720 Mountain Ave Chino, CA 91710 
+                        6207 Dean Martin Dr, Las Vegas, NV 89118
                       </MKTypography>
                     </MKBox>
+
+
                     <MKBox mt={3}>
                       <MKButton variant="text" color="white" size="large" iconOnly>
                         <i className="fab fa-facebook" style={{ fontSize: "1.25rem" }} />

@@ -10,11 +10,12 @@
 
 */
 
+
 // @mui icons
-import InsightsIcon from '@mui/icons-material/Insights';
-import SpeedIcon from '@mui/icons-material/Speed';
-import UpdateIcon from '@mui/icons-material/Update';
-import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import ConstructionIcon from '@mui/icons-material/Construction';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import SchoolIcon from '@mui/icons-material/School';
 
 // @mui material components
 import Container from "@mui/material/Container";
@@ -29,13 +30,26 @@ import DefaultInfoCard from "../../../examples/Cards/InfoCards/DefaultInfoCard";
 import CenteredBlogCard from "../../../examples/Cards/BlogCards/CenteredBlogCard";
 
 // Images
-import lef from "../../../assets/images/home/lef.png";
+import panel from "../../../assets/images/services/panel.png";
 
-function LightCards() {
+function InfoCard() {
   return (
     <MKBox component="section" py={12}>
       <Container>
         <Grid container spacing={3} alignItems="center">
+        <Grid item xs={12} lg={4} sx={{ mr: "auto", mt: { xs: 3, lg: 0 } }}>
+            <CenteredBlogCard
+              image={panel}
+              title="Tailored for You and Your Technology"
+              description="At ControlWorks BAS, we understand that a one-size-fits-all approach doesn't work in building automation. That's why we offer a variety of leading BAS platforms to ensure your system seamlessly integrates with your existing infrastructure and delivers the results you need."
+              action={{
+                type: "internal",
+                route: "../contact",
+                color: "info",
+                label: "find out more",
+              }}
+            />
+          </Grid>
           <Grid item xs={12} lg={6}>
             <Grid container justifyContent="flex-start">
               <Grid item xs={12} md={6}>
@@ -45,9 +59,9 @@ function LightCards() {
                       display="block"
                       variant="h3"
                       textGradient
-                    ><InsightsIcon color="primary"/></MKTypography>}
-                    title="Customized Approach"
-                    description="We take the time to understand your unique needs and goals to develop a BAS solution tailored for your building."
+                    ><DesignServicesIcon color="primary"/></MKTypography>}
+                    title="Design & Engineering"
+                    description="Our experienced engineers design a customized BAS solution that integrates seamlessly with your existing HVAC, lighting, security, and other systems."
                   />
                 </MKBox>
               </Grid>
@@ -58,9 +72,9 @@ function LightCards() {
                       display="block"
                       variant="h3"
                       textGradient
-                    ><SpeedIcon color="primary"/></MKTypography>}
-                    title="Focus on Efficiency"
-                    description="We prioritize energy-saving strategies to minimize your environmental impact and operating costs."
+                    ><ConstructionIcon color="primary"/></MKTypography>}
+                    title="Installation"
+                    description="Our certified technicians skillfully install your BAS hardware and software, ensuring a smooth and efficient process."
                   />
                 </MKBox>
               </Grid>
@@ -71,9 +85,9 @@ function LightCards() {
                       display="block"
                       variant="h3"
                       textGradient
-                    ><UpdateIcon color="primary"/></MKTypography>}
-                    title="Long-Term Value"
-                    description="Our BAS solutions deliver lasting benefits through increased efficiency and reduced maintenance needs."
+                    ><SupportAgentIcon color="primary"/></MKTypography>}
+                    title="Maintenance & Support"
+                    description="We offer comprehensive preventative maintenance plans to identify and address potential issues before they disrupt your operations."
                   />
                 </MKBox>
               </Grid>
@@ -84,26 +98,13 @@ function LightCards() {
                       display="block"
                       variant="h3"
                       textGradient
-                    ><TipsAndUpdatesIcon color="primary"/></MKTypography>}
-                    title="Continuous Innovation"
-                    description="We stay at the forefront of the BAS industry, leveraging the latest advancements to optimize your system."
+                    ><SchoolIcon color="primary"/></MKTypography>}
+                    title="Training"
+                    description="We offer training programs to empower your staff to utilize the BAS effectively and maximize its potential."
                   />
                 </MKBox>
               </Grid>
             </Grid>
-          </Grid>
-          <Grid item xs={12} lg={4} sx={{ ml: "auto", mt: { xs: 3, lg: 0 } }}>
-            <CenteredBlogCard
-              image={lef}
-              title="Elevate your next project"
-              description="ControlWorks BAS offers seamless integration, advanced features, and unparalleled reliability, empowering you to design intelligent spaces that truly perform."
-              action={{
-                type: "internal",
-                route: "../contact",
-                color: "info",
-                label: "find out more",
-              }}
-            />
           </Grid>
         </Grid>
       </Container>
@@ -111,4 +112,4 @@ function LightCards() {
   );
 }
 
-export default LightCards;
+export default InfoCard;

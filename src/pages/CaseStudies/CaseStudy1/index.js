@@ -17,26 +17,21 @@ import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
 // Material Kit 2 React components
-import MKBox from "../../components/MKBox";
-import MKTypography from "../../components/MKTypography";
+import MKBox from "../../../components/MKBox";
+import MKTypography from "../../../components/MKTypography";
 
 // Material Kit 2 React examples
-import DefaultNavbar from "../../examples/Navbars/DefaultNavbar";
-import SimpleFooter from "../../examples/Footers/SimpleFooter";
-
-// About Us page sections
-import Stats from "./sections/Stats";
-import DarkCards from "./sections/DarkCards";
-import Posts from "./sections/Posts";
+import DefaultNavbar from "../../../examples/Navbars/DefaultNavbar";
+import SimpleFooter from "../../../examples/Footers/SimpleFooter";
 
 // Routes
-import routes from "../../routes";
-import footerRoutes from "../../footer.routes";
+import routes from "../../../routes";
+import footerRoutes from "../../../footer.routes";
 
 // Images
-import bgImage from "../../assets/images/headerBackground.jpg";
+import bgImage from "../../../assets/images/headerBackground.jpg";
 
-function Solutions() {
+function CaseStudy1() {
   return (
     <>
       <DefaultNavbar
@@ -95,9 +90,8 @@ function Solutions() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Stats />
-        <DarkCards />
-        <Posts/>
+        // Add Back Button
+        // Insert content HERE
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <SimpleFooter content={footerRoutes} />
@@ -106,4 +100,4 @@ function Solutions() {
   );
 }
 
-export default Solutions;
+export default CaseStudy1;

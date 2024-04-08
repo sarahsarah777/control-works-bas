@@ -4,6 +4,7 @@
   "private": true,
   "author": "Sarah Padilla",
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@emailjs/browser": "^4.3.3",
     "@emotion/cache": "11.10.7",
     "@emotion/react": "11.10.6",

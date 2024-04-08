@@ -25,6 +25,7 @@ import Home from "./layouts/pages/home";
 
 // Material Kit 2 React routes
 import routes from "./routes";
+import CaseStudy1 from "./pages/CaseStudies/CaseStudy1";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -55,6 +56,9 @@ export default function App() {
         {getRoutes(routes)}
         <Route path="/home" element={<Home />} />
         <Route path="*" element={<Navigate to="/home" />} />
+        <Route path="/casestudy1" element={<CaseStudy1 />} />
+        {/* <Route path="/casestudy2" element={<CaseStudy2 />} />
+        <Route path="/casestudy3" element={<CaseStudy3 />} /> */}
       </Routes>
     </ThemeProvider>
   );
