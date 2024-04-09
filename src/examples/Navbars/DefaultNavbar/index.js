@@ -478,7 +478,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             py={transparent ? 1.5 : 0.75}
             pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
           >
-            <MKBox component="img" src={logoText} alt="coinbase" width="100px" />
+            <MKBox component="img" src={logoText} alt="logo" width="100px" />
           </MKBox>
           <MKBox
             color="inherit"

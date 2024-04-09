@@ -72,7 +72,7 @@ function SimpleFooter() {
             mr="auto"
             mb={{ xs: 3, lg: 0 }}
           >
-            <MKBox component="img" src={logoCT} alt="coinbase" width="100px" opacity={0.7} mb={{ xs: 2, lg: 3 }}/>
+            <MKBox component="img" src={logoCT} alt="logo" width="100px" opacity={0.7} mb={{ xs: 2, lg: 3 }}/>
             <Stack
               component="ul"
               direction="row"
@@ -108,7 +108,7 @@ function SimpleFooter() {
               variant="body2"
               color="dark"
             >
-              <MKBox component="img" src={logoText} alt="coinbase" width="200px"/>
+              <MKBox component="img" src={logoText} alt="logo" width="200px"/>
             </MKTypography>
             <MKTypography variant="body1" fontWeight="bold" mt={6} sx={{ fontSize: "1.125rem" }} opacity={0.8}>
               To Create & Keep Customers
