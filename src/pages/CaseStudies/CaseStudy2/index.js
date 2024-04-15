@@ -33,7 +33,7 @@ import footerRoutes from "../../../footer.routes";
 // Images
 import bgImage from "../../../assets/images/headerBackground.jpg";
 
-function CaseStudy1() {
+function CaseStudy2() {
   return (
     <>
       <DefaultNavbar
@@ -102,84 +102,81 @@ function CaseStudy1() {
                 Case Study
               </MKTypography>
               <MKTypography variant="h2">
-                ControlWorks Optimizes Critical Environment for Edwards Lifesciences
+                ControlWorks Enhances Luxury Retail Experience at Dior's New Rodeo Drive Flagship
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
                 Project Overview
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} mt={2}>
-                ControlWorks BAS partnered with Edwards Lifesciences on the critical environment construction of their new Building E.  This facility houses multiple laboratories dedicated to vital research activities. Precise environmental control is essential to ensure the integrity of research and the safety of lab personnel.
+                ControlWorks BAS is proud to be a part of the construction for Christian Dior's new flagship boutique on Rodeo Drive in Beverly Hills, California. This highly anticipated project will create a luxurious and dynamic retail environment, showcasing Dior's renowned fashion and commitment to innovation. ControlWorks BAS is providing a comprehensive building automation system (BAS) solution to ensure optimal comfort, energy efficiency, and seamless control for this world-class destination.
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
                 Challenges
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} mt={2}>
-                Edwards LifeSciences required a BAS solution that could meet the stringent requirements of a critical environment, similar to the challenges outlined in the previous case study. Here's a reiteration:
+                Creating a luxurious retail experience requires a meticulously controlled environment. Key challenges for the BAS system include:
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Maintaining precise temperature and humidity levels</b>: Fluctuations can compromise research and damage sensitive equipment.
+                • <b>Precise climate control</b>: Maintaining consistent temperature and humidity levels is crucial for customer comfort, protecting high-end merchandise, and ensuring optimal product presentation.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Ensuring air quality</b>: Labs often utilize hazardous materials, so proper ventilation and air filtration are crucial.
+                • <b>Zoned comfort</b>: Different areas within the boutique may have varying temperature and airflow requirements, such as open sales floors compared to VIP fitting rooms.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Fume hood control</b>: Fume hoods require specific airflow patterns to safely capture and exhaust hazardous fumes.
+                • <b>Energy efficiency</b>: A high-performance BAS is essential for minimizing energy consumption and operational costs for a large retail space.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Real-time monitoring and data collection</b>: Continuous monitoring of critical environmental parameters and data collection for analysis are essential.
+                • <b>Flexibility and future-proofing</b>: The BAS needs to be adaptable to accommodate potential future changes in the store layout or operations.
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
                 Solutions
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} mt={2}>
-                ControlWorks BAS addressed these challenges with a similar approach, leveraging the information from the Construction link:
+                ControlWorks BAS is implementing a state-of-the-art BAS solution featuring:
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Siemens Desigo Building Automation System</b>: A powerful platform designed for complex building environments like Building E.
+                • <b>Variable refrigerant flow (VRF) systems</b>:  VRF technology provides efficient and precise temperature control throughout the boutique. VRF systems offer superior zoning capabilities, allowing for independent control of different areas.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Network of Siemens field devices</b>: Sensors throughout the building provide real-time data on critical environmental conditions.
+                • <b>Packaged rooftop air handling units (AHUs)</b>: These pre-assembled units provide efficient ventilation and air conditioning for large open spaces within the store.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Siemens Desigo Optic software</b>: A central hub for data collection, visualization, and analysis, empowering real-time monitoring and informed decision-making.
+                • <b>Comprehensive HVAC control</b>: ControlWorks BAS will integrate and manage all HVAC equipment, ensuring optimal operation and efficient energy use.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Fume hood integration</b>: Ensures proper airflow for safety and efficient fume exhaust.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Customizable alarms</b>: Notify operators of out-of-range environmental conditions, allowing for immediate corrective action.
+                • <b>Open BACnet® DDC System</b>: ControlWorks BAS proposes an open BACnet Building Automation and Control Networks (BACnet) Direct Digital Control (DDC) system. This open protocol ensures seamless communication between various equipment and the BAS, offering advantages such as:
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
                 Results
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} mt={2}>
-                By implementing the Siemens Desigo BAS solution, ControlWorks BAS helped Edwards Lifesciences achieve significant improvements in their critical environment:
+                By implementing the ControlWorks BAS solution, Dior's new Rodeo Drive flagship will benefit from:
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Precise environmental control</b>: Consistent temperature and humidity maintain optimal research conditions and protect sensitive equipment.
+                • <b>Enhanced customer comfort</b>: Precise climate control ensures a luxurious and enjoyable shopping experience for all customers.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Enhanced air quality</b>: Real-time monitoring allows for proactive adjustments to ventilation and filtration systems, safeguarding personnel health.
+                • <b>Optimal product presentation</b>: Consistent temperature and humidity levels safeguard the integrity of high-end merchandise.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Optimized fume hood operation</b>: Maximizes safety and efficiency.
+                • <b>Improved energy efficiency</b>: The BAS will optimize HVAC operation, leading to reduced energy consumption and lower operational costs.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Improved operational efficiency</b>: Real-time data and user-friendly dashboards empower building operators to identify trends, optimize system performance, and potentially contribute to LEED Gold certification goals.
+                • <b>Flexibility and scalability</b>: The open BACnet system can adapt to future changes in the store layout or integrate with additional technologies.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Peace of mind</b>: Edwards LifeSciences can be confident that their critical environment is meticulously controlled and monitored by a reliable BAS system.
+                • <b>Simplified maintenance</b>: The use of standardized communication protocols facilitates easier troubleshooting and maintenance of the BAS.
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
                 Conclusion
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} mt={2}>
-                ControlWorks BAS’s expertise and the Siemens Desigo BAS solution delivered a successful outcome for Edwards LifeSciences' critical environment in Building E. The system ensures optimal environmental conditions, safeguards personnel health, and streamlines operational efficiency, allowing Edwards LifeSciences to focus on their vital research endeavors.
+                ControlWorks BAS understands the unique requirements of high-end retail environments.  Our proposed BAS solution will deliver superior comfort, energy efficiency, and operational flexibility for Dior's new Rodeo Drive flagship.  The open BACnet DDC system ensures a future-proof solution that can adapt and evolve alongside Dior's vision for this landmark retail destination.
               </MKTypography>
             </Grid>
           </Container>
@@ -192,4 +189,4 @@ function CaseStudy1() {
   );
 }
 
-export default CaseStudy1;
+export default CaseStudy2;

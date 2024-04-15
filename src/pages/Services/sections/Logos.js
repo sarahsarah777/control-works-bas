@@ -19,10 +19,10 @@ import Grid from "@mui/material/Grid";
 import MKBox from "../../../components/MKBox";
 
 // Images
-import abbCylon from "../../../assets/images/solutions/abbCylon.png";
-import pelican from "../../../assets/images/solutions/pelican.png";
-import siemens from "../../../assets/images/solutions/siemens.png";
-import tridium from "../../../assets/images/solutions/tridium.png";
+import abbCylon from "../../../assets/images/services/abbCylon.png";
+import pelican from "../../../assets/images/services/pelican.png";
+import siemens from "../../../assets/images/services/siemens.png";
+import tridium from "../../../assets/images/services/tridium.png";
 
 function Logos() {
   return (

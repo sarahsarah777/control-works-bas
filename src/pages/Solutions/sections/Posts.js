@@ -24,9 +24,9 @@ import TransparentBlogCard from "../../../examples/Cards/BlogCards/TransparentBl
 import BackgroundBlogCard from "../../../examples/Cards/BlogCards/BackgroundBlogCard";
 
 // Images
-import post1 from "../../../assets/images/solutions/office.png";
-import post2 from "../../../assets/images/solutions/healthcare.png";
-import post3 from "../../../assets/images/solutions/educational.png";
+import post1 from "../../../assets/images/solutions/caseStudy1.png";
+import post2 from "../../../assets/images/solutions/caseStudy2.png";
+import post3 from "../../../assets/images/solutions/caseStudy3.png";
 import post4 from "../../../assets/images/solutions/retail.png";
 
 function Posts() {
@@ -42,8 +42,8 @@ function Posts() {
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post1}
-              title="Case Study 1"
-              description="Add some description text here"
+              title="Edwards Lifescience"
+              description="ControlWorks Optimizes Critical Environment for Edwards Lifesciences"
               action={{
                 type: "internal",
                 route: "/casestudy1",
@@ -55,11 +55,11 @@ function Posts() {
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post2}
-              title="Case Study 2"
-              description="Add some description text here"
+              title="Dior"
+              description="ControlWorks Enhances Luxury Retail Experience at Dior's New Rodeo Drive Flagship"
               action={{
                 type: "internal",
-                route: "/casestudy1",
+                route: "/casestudy2",
                 color: "info",
                 label: "read more",
               }}
@@ -68,11 +68,11 @@ function Posts() {
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post3}
-              title="Case Study 3"
-              description="Add some description text here"
+              title="Mt. San Jacinto College"
+              description="ControlWorks Empowers Data-Driven Learning at Mt. San Jacinto College's New STEM Building"
               action={{
                 type: "internal",
-                route: "/casestudy1",
+                route: "/casestudy3",
                 color: "info",
                 label: "read more",
               }}
@@ -81,12 +81,12 @@ function Posts() {
           <Grid item xs={12} sm={6} lg={3}>
             <BackgroundBlogCard
               image={post4}
-              title="and more!"
-              description="Add some description text here"
+              title="Get connected"
+              description="Contact ControlWorks BAS today and let's discuss how we can create a smarter, more efficient future for your space."
               action={{
                 type: "internal",
-                route: "/casestudy1",
-                label: "read more",
+                route: "/contact",
+                label: "contact us",
               }}
             />
           </Grid>

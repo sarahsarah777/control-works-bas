@@ -33,7 +33,7 @@ import footerRoutes from "../../../footer.routes";
 // Images
 import bgImage from "../../../assets/images/headerBackground.jpg";
 
-function CaseStudy1() {
+function CaseStudy3() {
   return (
     <>
       <DefaultNavbar
@@ -102,84 +102,75 @@ function CaseStudy1() {
                 Case Study
               </MKTypography>
               <MKTypography variant="h2">
-                ControlWorks Optimizes Critical Environment for Edwards Lifesciences
+                ControlWorks Empowers Data-Driven Learning at Mt. San Jacinto College's New STEM Building
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
                 Project Overview
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} mt={2}>
-                ControlWorks BAS partnered with Edwards Lifesciences on the critical environment construction of their new Building E.  This facility houses multiple laboratories dedicated to vital research activities. Precise environmental control is essential to ensure the integrity of research and the safety of lab personnel.
+              ControlWorks BAS partnered with Mt. San Jacinto College (MSJC) to deliver a best-in-class building automation system (BAS) for their innovative new STEM building. This state-of-the-art facility fosters a dynamic learning environment for Science, Technology, Engineering, and Math (STEM) education. ControlWorks BAS designed and implemented a system that optimizes building operations, ensures occupant comfort, and provides valuable data for educational purposes.
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
                 Challenges
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} mt={2}>
-                Edwards LifeSciences required a BAS solution that could meet the stringent requirements of a critical environment, similar to the challenges outlined in the previous case study. Here's a reiteration:
+                MSJC's new STEM building features advanced laboratories, classrooms, and collaborative learning spaces. The primary challenges for the BAS system included:
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Maintaining precise temperature and humidity levels</b>: Fluctuations can compromise research and damage sensitive equipment.
+                • <b>Precise environmental control</b>: Maintaining consistent temperature and humidity levels is crucial for occupant comfort, lab equipment function, and efficient energy use.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Ensuring air quality</b>: Labs often utilize hazardous materials, so proper ventilation and air filtration are crucial.
+                • <b>Data integration</b>: The BAS needed to seamlessly integrate with MSJC's existing system to provide a comprehensive view of building performance.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Fume hood control</b>: Fume hoods require specific airflow patterns to safely capture and exhaust hazardous fumes.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Real-time monitoring and data collection</b>: Continuous monitoring of critical environmental parameters and data collection for analysis are essential.
+                • <b>Educational value</b>: The college desired a BAS that could provide real-time data for educational purposes, allowing students to gain practical insights into building systems and sustainability practices.
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
                 Solutions
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} mt={2}>
-                ControlWorks BAS addressed these challenges with a similar approach, leveraging the information from the Construction link:
+                ControlWorks BAS implemented a robust and scalable BAS solution leveraging Tridium's Niagara Framework:
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Siemens Desigo Building Automation System</b>: A powerful platform designed for complex building environments like Building E.
+                • <b>Comprehensive system control</b>: The BAS provides centralized control over the hot water system, chilled water system, air handling units (AHUs), and lab exhaust fans (LEFs). This ensures optimal operation for temperature control, ventilation, and efficient energy consumption.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Network of Siemens field devices</b>: Sensors throughout the building provide real-time data on critical environmental conditions.
+                • <b>Data integration</b>: ControlWorks BAS seamlessly integrated with MSJC's existing system, enabling the consolidation of data from various sources into a single platform.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Siemens Desigo Optic software</b>: A central hub for data collection, visualization, and analysis, empowering real-time monitoring and informed decision-making.
+                • <b>Customizable Niagara graphics</b>: Our team developed custom graphical user interfaces within Niagara, featuring thermal floorplans for intuitive visualization of temperature data throughout the building.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Fume hood integration</b>: Ensures proper airflow for safety and efficient fume exhaust.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Customizable alarms</b>: Notify operators of out-of-range environmental conditions, allowing for immediate corrective action.
+                • <b>Real-time data access</b>:  The BAS provides real-time access to critical building performance metrics, allowing instructors to integrate this data into their curriculum. Students can monitor energy consumption, temperature fluctuations, and other parameters, gaining valuable insights into building systems and sustainability principles.
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
                 Results
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} mt={2}>
-                By implementing the Siemens Desigo BAS solution, ControlWorks BAS helped Edwards Lifesciences achieve significant improvements in their critical environment:
+                By implementing the ControlWorks BAS solution, MSJC's new STEM building benefits from:
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Precise environmental control</b>: Consistent temperature and humidity maintain optimal research conditions and protect sensitive equipment.
+                • <b>Enhanced comfort and learning environment</b>: Precise environmental control ensures optimal conditions for learning and research activities.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Enhanced air quality</b>: Real-time monitoring allows for proactive adjustments to ventilation and filtration systems, safeguarding personnel health.
+                • <b>Improved operational efficiency</b>: The BAS optimizes system performance, leading to reduced energy consumption and lower operational costs.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Optimized fume hood operation</b>: Maximizes safety and efficiency.
+                • <b>Data-driven learning</b>: Real-time data from the BAS provides a unique educational tool, allowing students to engage with and understand building systems and sustainability practices.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Improved operational efficiency</b>: Real-time data and user-friendly dashboards empower building operators to identify trends, optimize system performance, and potentially contribute to LEED Gold certification goals.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Peace of mind</b>: Edwards LifeSciences can be confident that their critical environment is meticulously controlled and monitored by a reliable BAS system.
+                • <b>Informed decision-making</b>: Building operators have access to comprehensive data for informed decision-making regarding maintenance, energy use, and occupant comfort.
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
                 Conclusion
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} mt={2}>
-                ControlWorks BAS’s expertise and the Siemens Desigo BAS solution delivered a successful outcome for Edwards LifeSciences' critical environment in Building E. The system ensures optimal environmental conditions, safeguards personnel health, and streamlines operational efficiency, allowing Edwards LifeSciences to focus on their vital research endeavors.
+                ControlWorks BAS's expertise in building automation systems empowers educational institutions like MSJC to create intelligent and data-driven learning environments. The BAS solution for the new STEM building fosters occupant comfort, optimizes operations, and provides a unique educational tool, all while contributing to a sustainable future.
               </MKTypography>
             </Grid>
           </Container>
@@ -192,4 +183,4 @@ function CaseStudy1() {
   );
 }
 
-export default CaseStudy1;
+export default CaseStudy3;
