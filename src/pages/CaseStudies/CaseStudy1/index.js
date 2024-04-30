@@ -95,7 +95,7 @@ function CaseStudy1() {
         <MKBox component="section" py={12}>
           <Container>
             <a href="../solutions">
-              <ArrowBackIcon fontSize="large"/>
+              <ArrowBackIcon fontSize="large" color="primary" />
             </a>
             <Grid item xs={12} md={8} sx={{ mb: 6 }}>
               <MKTypography variant="h6" textTransform="uppercase" color="secondary">
