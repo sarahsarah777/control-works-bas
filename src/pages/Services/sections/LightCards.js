@@ -10,86 +10,76 @@
  =========================================================
 
 */
-
-
-// @mui icons
-import EnergySavingsLeafIcon from '@mui/icons-material/EnergySavingsLeaf';
-import SecurityIcon from '@mui/icons-material/Security';
-import LightbulbIcon from '@mui/icons-material/Lightbulb';
-import HvacIcon from '@mui/icons-material/Hvac';
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "../../../components/MKBox";
-import MKTypography from "../../../components/MKTypography";
 
 // Material Kit 2 React examples
-import DefaultInfoCard from "../../../examples/Cards/InfoCards/DefaultInfoCard";
+import HorizontalTeamCardDark from "../../../examples/Cards/TeamCards/HorizontalTeamCardDark";
 
+// Images
+import energy from "../../../assets/images/services/energy.png";
+import security from "../../../assets/images/services/security.png";
+import lighting from "../../../assets/images/services/lighting.png";
+import hvac from "../../../assets/images/services/hvac.png";
 
 function LightCards() {
   return (
-    <MKBox component="section" pt={12}  pb={12}>
+    <MKBox
+      component="section"
+      bgColor="white"
+      position="relative"
+      py={6}
+      px={{ xs: 2, lg: 0 }}
+      mx={-2}
+      my={6}
+    >
       <Container>
+        <Grid container spacing={3}>
           <Grid item xs={12} lg={6}>
-            <Grid container justifyContent="flex-start">
-              <Grid item xs={12} md={6}>
-                <MKBox mb={5}>
-                  <DefaultInfoCard
-                    icon={<MKTypography
-                      display="block"
-                      variant="h3"
-                      textGradient
-                    ><HvacIcon color="primary"/></MKTypography>}
-                    title="HVAC Optimization"
-                    description="Gain precise control over heating, ventilation, and air conditioning systems to ensure occupant comfort while minimizing energy consumption."
-                  />
-                </MKBox>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <MKBox mb={5}>
-                  <DefaultInfoCard
-                    icon={<MKTypography
-                      display="block"
-                      variant="h3"
-                      textGradient
-                    ><LightbulbIcon color="primary"/></MKTypography>}
-                    title="Lighting Control"
-                    description="Implement intelligent lighting systems that automatically adjust based on occupancy and natural light, creating a more energy-efficient environment."
-                  />
-                </MKBox>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <MKBox mb={{ xs: 5, md: 0 }}>
-                  <DefaultInfoCard
-                    icon={<MKTypography
-                      display="block"
-                      variant="h3"
-                      textGradient
-                    ><SecurityIcon color="primary"/></MKTypography>}
-                    title="Security & Access Control"
-                    description="Integrate your BAS with security systems for comprehensive building management and enhanced security measures."
-                  />
-                </MKBox>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <MKBox mb={{ xs: 5, md: 0 }}>
-                  <DefaultInfoCard
-                    icon={<MKTypography
-                      display="block"
-                      variant="h3"
-                      textGradient
-                    ><EnergySavingsLeafIcon color="primary"/></MKTypography>}
-                    title="Energy Management"
-                    description="Gain valuable insights into your building's energy consumption and identify opportunities for significant cost savings."
-                  />
-                </MKBox>
-              </Grid>
-            </Grid>
+            <MKBox mb={1}>
+              <HorizontalTeamCardDark
+                image={energy}
+                name="Energy Management"
+                position={{ color: "info", label: "" }}
+                description="Gain valuable insights into your building's energy consumption and identify opportunities for significant cost savings."
+              />
+            </MKBox>
           </Grid>
+          <Grid item xs={12} lg={6}>
+            <MKBox mb={1}>
+              <HorizontalTeamCardDark
+                image={security}
+                name="Security & Access Control"
+                position={{ color: "info", label: "" }}
+                description="Integrate your BAS with security systems for comprehensive building management and enhanced security measures."
+              />
+            </MKBox>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <MKBox mb={{ xs: 1, lg: 0 }}>
+              <HorizontalTeamCardDark
+                image={lighting}
+                name="Lighting Control"
+                position={{ color: "info", label: "" }}
+                description="Implement intelligent lighting systems that automatically adjust based on occupancy and natural light, creating a more energy-efficient environment."
+              />
+            </MKBox>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <MKBox mb={{ xs: 1, lg: 0 }}>
+              <HorizontalTeamCardDark
+                image={hvac}
+                name="HVAC Optimization"
+                position={{ color: "info", label: "" }}
+                description="Gain precise control over heating, ventilation, and air conditioning systems to ensure occupant comfort while minimizing energy consumption."
+              />
+            </MKBox>
+          </Grid>
+        </Grid>
       </Container>
     </MKBox>
   );

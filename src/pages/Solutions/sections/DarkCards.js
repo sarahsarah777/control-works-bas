@@ -20,13 +20,13 @@ import MKBox from "../../../components/MKBox";
 import MKTypography from "../../../components/MKTypography";
 
 // Material Kit 2 React examples
-import HorizontalTeamCard from "../../../examples/Cards/TeamCards/HorizontalTeamCard";
+import DefaultInfoCard from "../../../examples/Cards/InfoCards/DefaultInfoCard";
 
-// Images
-import retail from "../../../assets/images/solutions/retail.png";
-import healthcare from "../../../assets/images/solutions/healthcare.png";
-import office from "../../../assets/images/solutions/office.png";
-import educational from "../../../assets/images/solutions/educational.png";
+// @mui icons
+import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
+import SchoolIcon from '@mui/icons-material/School';
+import StorefrontIcon from '@mui/icons-material/Storefront';
+import BusinessIcon from '@mui/icons-material/Business';
 
 function DarkCards() {
   return (
@@ -52,41 +52,53 @@ function DarkCards() {
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={6}>
-            <MKBox mb={1}>
-              <HorizontalTeamCard
-                image={office}
-                name="Office Buildings"
-                position={{ color: "info", label: "Offices" }}
+            <MKBox mb={1} bgColor="white" borderRadius="0.75rem" style={{padding: "20px"}}>
+              <DefaultInfoCard
+                icon={<MKTypography
+                  display="block"
+                  variant="h3"
+                  textGradient
+                ><BusinessIcon color="primary"/></MKTypography>}
+                title="Office Buildings"
                 description="Create a comfortable and productive work environment with intelligent temperature control, optimized lighting, and improved air quality."
               />
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={retail}
-                name="Retail Stores"
-                position={{ color: "info", label: "Retail Stores & Shopping Malls" }}
+            <MKBox mb={{ xs: 1, lg: 0 }} bgColor="white" borderRadius="0.75rem" style={{padding: "20px"}}>
+              <DefaultInfoCard
+                icon={<MKTypography
+                  display="block"
+                  variant="h3"
+                  textGradient
+                ><StorefrontIcon color="primary"/></MKTypography>}
+                title="Retail Stores"
                 description="Enhance the customer experience with BAS systems that manage lighting, temperature, and security for a more inviting atmosphere."
               />
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={educational}
-                name="Educational Institutions"
-                position={{ color: "info", label: "Schools & Universities" }}
+            <MKBox mb={{ xs: 1, lg: 0 }} bgColor="white" borderRadius="0.75rem" style={{padding: "20px"}}>
+              <DefaultInfoCard
+                icon={<MKTypography
+                  display="block"
+                  variant="h3"
+                  textGradient
+                ><SchoolIcon color="primary"/></MKTypography>}
+                title="Schools & Universities"
                 description="Provide a safe and comfortable learning environment with BAS solutions that optimize air quality, lighting, and energy use."
               />
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
-            <MKBox mb={1}>
-              <HorizontalTeamCard
-                image={healthcare}
-                name="Healthcare Facilities"
-                position={{ color: "info", label: "Hospitals & Healthcare Facilities" }}
+            <MKBox mb={1} bgColor="white" borderRadius="0.75rem" style={{padding: "20px"}}>
+              <DefaultInfoCard
+                icon={<MKTypography
+                  display="block"
+                  variant="h3"
+                  textGradient
+                ><LocalHospitalIcon color="primary"/></MKTypography>}
+                title="Hospitals & Healthcare Facilities"
                 description="Ensure critical environments maintain precise temperature and humidity levels while maximizing energy efficiency."
               />
             </MKBox>
