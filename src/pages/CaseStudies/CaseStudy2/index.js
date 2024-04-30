@@ -147,7 +147,7 @@ function CaseStudy2() {
                 • <b>Comprehensive HVAC control</b>: ControlWorks BAS will integrate and manage all HVAC equipment, ensuring optimal operation and efficient energy use.
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • <b>Open BACnet® DDC System</b>: ControlWorks BAS proposes an open BACnet Building Automation and Control Networks (BACnet) Direct Digital Control (DDC) system. This open protocol ensures seamless communication between various equipment and the BAS, offering advantages such as:
+                • <b>Open BACnet® DDC System</b>: ControlWorks BAS proposes an open BACnet Building Automation and Control Networks (BACnet) Direct Digital Control (DDC) system. This open protocol ensures seamless communication between various equipment and the BAS.
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
