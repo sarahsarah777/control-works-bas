@@ -10,6 +10,12 @@
 
 */
 
+//Icons
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import PlaceIcon from '@mui/icons-material/Place';
+
+// react-router components
+import { Link } from "react-router-dom";
 
 // @mui material components
 import Container from "@mui/material/Container";
@@ -42,9 +48,6 @@ function Team() {
             <MKTypography variant="h3" color="white">
               Meet the Team
             </MKTypography>
-            <MKTypography variant="body2" color="white" opacity={0.8}>
-              Meet the Minds Behind Smarter Buildings
-            </MKTypography>
           </Grid>
         </Grid>
         <Grid container spacing={3}>
@@ -54,7 +57,7 @@ function Team() {
                 image={profile}
                 name="David Swanson"
                 position={{ color: "info", label: "Branch Manager" }}
-                description="davids@controlworksbas.com"
+                description={[<><PlaceIcon style={{marginRight: "5px"}}/>Chino, CA</>]}
               />
             </MKBox>
           </Grid>
@@ -64,7 +67,27 @@ function Team() {
                 image={profile}
                 name="Chris Pasley"
                 position={{ color: "info", label: "Sales" }}
-                description="chrisp@controlworksbas.com"
+                description={[<><PlaceIcon style={{marginRight: "5px"}}/>Chino, CA</>]}
+              />
+            </MKBox>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <MKBox mb={{ xs: 1, lg: 0 }}>
+              <HorizontalTeamCard
+                image={profile}
+                name="Darren Stevens"
+                position={{ color: "info", label: "Project Manager" }}
+                description={[<><PlaceIcon style={{marginRight: "5px"}}/>Chino, CA</>]}
+              />
+            </MKBox>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <MKBox mb={{ xs: 1, lg: 0 }}>
+              <HorizontalTeamCard
+                image={profile}
+                name="Shawn Goddard"
+                position={{ color: "info", label: "Programmer" }}
+                description={[<><PlaceIcon style={{marginRight: "5px"}}/>Chino, CA</>]}
               />
             </MKBox>
           </Grid>
@@ -74,7 +97,7 @@ function Team() {
                 image={profile}
                 name="Dave Luithle"
                 position={{ color: "info", label: "Project Manager" }}
-                description="davidl@controlworksbas.com"
+                description={[<><PlaceIcon style={{marginRight: "5px"}}/>Chino, CA</>]}
               />
             </MKBox>
           </Grid>
@@ -84,81 +107,30 @@ function Team() {
                 image={profile}
                 name="Ben Swanson"
                 position={{ color: "info", label: "Sales" }}
-                description="bens@controlworksbas.com"
+                description={[<><PlaceIcon style={{marginRight: "5px"}}/>Chino, CA</>]}
               />
             </MKBox>
           </Grid>
-         
-          {/* <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={team2}
-                name="Don Titas"
-                position={{ color: "info", label: "Position" }}
-                description="Here is a description to be added later"
-              />
-            </MKBox>
+        </Grid>
+        <Grid container>
+          <Grid item xs={12} md={8} sx={{ mt: 6 }}>
+            <MKTypography variant="h3" color="white">
+              Become part of our team
+            </MKTypography>
+            <MKTypography variant="body2" color="white" opacity={0.8}>
+              <MKTypography
+                component={Link}
+                to="/careeropportunities"
+                variant="body2"
+                fontWeight="regular"
+                color="white"
+                textTransform="capitalize"
+              >
+                Learn More
+                <ArrowForwardIcon />
+              </MKTypography>
+            </MKTypography>
           </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={team2}
-                name="David Luithle"
-                position={{ color: "info", label: "Position" }}
-                description="Here is a description to be added later"
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={team2}
-                name="Andy Caliri"
-                position={{ color: "info", label: "Position" }}
-                description="Here is a description to be added later"
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={team4}
-                name="Sarah Padilla"
-                position={{ color: "info", label: "Position" }}
-                description="Here is a description to be added later"
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={team4}
-                name="Quintin Cardenas"
-                position={{ color: "info", label: "Position" }}
-                description="Here is a description to be added later"
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={team2}
-                name="Nikolas King"
-                position={{ color: "info", label: "Position" }}
-                description="Here is a description to be added later"
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={team2}
-                name="Michael Kemp"
-                position={{ color: "info", label: "Position" }}
-                description="Here is a description to be added later"
-              />
-            </MKBox>
-          </Grid> */}
         </Grid>
       </Container>
     </MKBox>

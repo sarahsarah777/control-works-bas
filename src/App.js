@@ -28,6 +28,7 @@ import routes from "./routes";
 import CaseStudy1 from "./pages/CaseStudies/CaseStudy1";
 import CaseStudy2 from "./pages/CaseStudies/CaseStudy2";
 import CaseStudy3 from "./pages/CaseStudies/CaseStudy3";
+import CareerOpportunities from "./pages/CareerOpportunities";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -61,6 +62,7 @@ export default function App() {
         <Route path="/casestudy1" element={<CaseStudy1 />} />
         <Route path="/casestudy2" element={<CaseStudy2 />} />
         <Route path="/casestudy3" element={<CaseStudy3 />} />
+        <Route path="/careeropportunities" element={<CareerOpportunities />} />
       </Routes>
     </ThemeProvider>
   );
