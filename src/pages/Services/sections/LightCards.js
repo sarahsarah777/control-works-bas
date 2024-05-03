@@ -26,6 +26,25 @@ import security from "../../../assets/images/services/security.png";
 import lighting from "../../../assets/images/services/lighting.png";
 import hvac from "../../../assets/images/services/hvac.png";
 
+const cards = [{
+  image: energy,
+  name: "Energy Management",
+  description: "Gain valuable insights into your building's energy consumption and identify opportunities for significant cost savings.",
+}, {
+  image: security,
+  name: "Security & Access Control",
+  description: "Integrate your BAS with security systems for comprehensive building management and enhanced security measures.",
+}, {
+  image: lighting,
+  name: "Lighting Control",
+  description: "Implement intelligent lighting systems that automatically adjust based on occupancy and natural light, creating a more energy-efficient environment.",
+}, {
+  image: hvac,
+  name: "HVAC Optimization",
+  description: "Gain precise control over heating, ventilation, and air conditioning systems to ensure occupant comfort while minimizing energy consumption.",
+}]
+
+
 function LightCards() {
   return (
     <MKBox
@@ -39,46 +58,18 @@ function LightCards() {
     >
       <Container>
         <Grid container spacing={3}>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={1}>
-              <HorizontalTeamCardDark
-                image={energy}
-                name="Energy Management"
-                position={{ color: "info", label: "" }}
-                description="Gain valuable insights into your building's energy consumption and identify opportunities for significant cost savings."
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={1}>
-              <HorizontalTeamCardDark
-                image={security}
-                name="Security & Access Control"
-                position={{ color: "info", label: "" }}
-                description="Integrate your BAS with security systems for comprehensive building management and enhanced security measures."
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCardDark
-                image={lighting}
-                name="Lighting Control"
-                position={{ color: "info", label: "" }}
-                description="Implement intelligent lighting systems that automatically adjust based on occupancy and natural light, creating a more energy-efficient environment."
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCardDark
-                image={hvac}
-                name="HVAC Optimization"
-                position={{ color: "info", label: "" }}
-                description="Gain precise control over heating, ventilation, and air conditioning systems to ensure occupant comfort while minimizing energy consumption."
-              />
-            </MKBox>
-          </Grid>
+          {cards.map((p, i) => (
+            <Grid item xs={12} lg={6}>
+              <MKBox mb={i < 2 ? 1 : { xs: 1, md: 0 }}>
+                <HorizontalTeamCardDark
+                  image={p.image}
+                  name={p.name}
+                  position={{ color: "info", label: "" }}
+                  description={p.description}
+                />
+              </MKBox>
+            </Grid>
+          ))}
         </Grid>
       </Container>
     </MKBox>
