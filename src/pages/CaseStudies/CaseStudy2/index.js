@@ -20,7 +20,6 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "../../../components/MKBox";
 import MKTypography from "../../../components/MKTypography";
-import MKButton from "../../../components/MKButton";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "../../../examples/Navbars/DefaultNavbar";
@@ -32,6 +31,7 @@ import footerRoutes from "../../../footer.routes";
 
 // Images
 import bgImage from "../../../assets/images/headerBackground.jpg";
+import post2 from "../../../assets/images/case-study/caseStudy2.png";
 
 function CaseStudy2() {
   return (
@@ -98,7 +98,8 @@ function CaseStudy2() {
               <ArrowBackIcon fontSize="large" color="primary" />
             </a>
             <Grid item xs={12} md={8} sx={{ mb: 6 }}>
-              <MKTypography variant="h6" textTransform="uppercase" color="secondary">
+            <MKBox component="img" src={post2} alt="post2" width="100%" style={{borderRadius: "15px"}}/>
+              <MKTypography variant="h6" textTransform="uppercase" color="secondary" mt={5}>
                 Case Study
               </MKTypography>
               <MKTypography variant="h2">

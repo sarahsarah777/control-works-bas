@@ -31,6 +31,7 @@ import footerRoutes from "../../../footer.routes";
 
 // Images
 import bgImage from "../../../assets/images/headerBackground.jpg";
+import post1 from "../../../assets/images/case-study/caseStudy1.png";
 
 function CaseStudy1() {
   return (
@@ -97,7 +98,8 @@ function CaseStudy1() {
               <ArrowBackIcon fontSize="large" color="primary" />
             </a>
             <Grid item xs={12} md={8} sx={{ mb: 6 }}>
-              <MKTypography variant="h6" textTransform="uppercase" color="secondary">
+              <MKBox component="img" src={post1} alt="post1" width="100%" style={{borderRadius: "15px"}}/>
+              <MKTypography variant="h6" textTransform="uppercase" color="secondary" mt={5}>
                 Case Study
               </MKTypography>
               <MKTypography variant="h2">
