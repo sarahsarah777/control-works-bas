@@ -27,6 +27,26 @@ import experiencedTeam from "../../../assets/images/home/experiencedTeam.png";
 import increasedEfficiency from "../../../assets/images/home/increasedEfficiency.png";
 import unmatchedFlexibility from "../../../assets/images/home/unmatchedFlexibility.png";
 
+const heading = "Building Intelligence, One System at a Time"
+const subheading = "Unlock the Potential of Your Building with Smarter Automation"
+const cards = [{
+  image: enhancedComfort,
+  name: "Enhanced Comfort",
+  description: "Create a comfortable and productive environment with precise temperature control, optimized lighting, and improved air quality.",
+}, {
+  image: increasedEfficiency,
+  name: "Increased Efficiency",
+  description: "Reduce energy consumption and operating costs with intelligent BAS control of your HVAC, lighting, and other systems.",
+}, {
+  image: experiencedTeam,
+  name: "Experienced Team",
+  description: "Our team of engineers and technicians possesses a proven track record of successful BAS implementations across diverse building types.",
+}, {
+  image: unmatchedFlexibility,
+  name: "Unmatched Flexibility",
+  description: "Our expertise in various platforms allows us to tailor the Building Automation System to your specific requirements and budget.",
+}]
+
 function DarkCards() {
   return (
     <MKBox
@@ -42,54 +62,26 @@ function DarkCards() {
         <Grid container>
           <Grid item xs={12} md={8} sx={{ mb: 6 }}>
             <MKTypography variant="h3" color="white">
-              Building Intelligence, One System at a Time
+              {heading}
             </MKTypography>
             <MKTypography variant="body2" color="white" opacity={0.8}>
-            Unlock the Potential of Your Building with Smarter Automation
+              {subheading}
             </MKTypography>
           </Grid>
         </Grid>
         <Grid container spacing={3}>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={1}>
-              <HorizontalTeamCard
-                image={enhancedComfort}
-                name="Enhanced Comfort"
-                position={{ color: "info", label: "" }}
-                description="Create a comfortable and productive environment with precise temperature control, optimized lighting, and improved air quality."
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={1}>
-              <HorizontalTeamCard
-                image={increasedEfficiency}
-                name="Increased Efficiency"
-                position={{ color: "info", label: "" }}
-                description="Reduce energy consumption and operating costs with intelligent BAS control of your HVAC, lighting, and other systems."
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={experiencedTeam}
-                name="Experienced Team"
-                position={{ color: "info", label: "" }}
-                description="Our team of engineers and technicians possesses a proven track record of successful BAS implementations across diverse building types."
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={unmatchedFlexibility}
-                name="Unmatched Flexibility"
-                position={{ color: "info", label: "" }}
-                description="Our expertise in various platforms allows us to tailor the Building Automation System to your specific requirements and budget."
-              />
-            </MKBox>
-          </Grid>
+          {cards.map((p, i) => (
+            <Grid item xs={12} lg={6}>
+              <MKBox mb={i < 2 ? 5 : { xs: 5, md: 0 }}>
+                <HorizontalTeamCard
+                  image={p.image}
+                  name={p.name}
+                  position={{ color: "info", label: "" }}
+                  description={p.description}
+                />
+              </MKBox>
+            </Grid>
+          ))}
         </Grid>
       </Container>
     </MKBox>

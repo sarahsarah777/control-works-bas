@@ -27,6 +27,11 @@ import MKButton from "../../../components/MKButton";
 // Images
 import macbook from "../../../assets/images/home/macbook.png";
 
+const heading = "Be the first to see the news"
+const subheading = ""
+const placeholder = "Email Here..."
+const button = "Subscribe"
+
 const SERVICE_ID = "service_23zzw2c";
 const TEMPLATE_ID = "template_jqv4y6h";
 const PUBLIC_KEY = "UBsw0aRCGscBuC-D0";
@@ -60,15 +65,15 @@ function Newsletter() {
       <Container>
         <Grid container alignItems="center">
           <Grid item md={6} sx={{ ml: { xs: 0, lg: 3 }, mb: { xs: 12, md: 0 } }}>
-            <MKTypography variant="h4">Be the first to see the news</MKTypography>
+            <MKTypography variant="h4">{heading}</MKTypography>
             <MKTypography variant="body2" color="text" mb={3}>
-              {/* Extra Text Here */}
+              {subheading}
             </MKTypography>
             <Grid container spacing={1}>
               <Grid item xs={8}>
                 <MKInput
                   type="email"
-                  label="Email Here..."
+                  label={placeholder}
                   fullWidth
                   value={email}
                   onChange={(event) => {
@@ -77,7 +82,7 @@ function Newsletter() {
               </Grid>
               <Grid item xs={4}>
                 <MKButton variant="gradient" color="info" sx={{ height: "100%" }} onClick={sendEmail}>
-                  Subscribe
+                  {button}
                 </MKButton>
               </Grid>
             </Grid>
