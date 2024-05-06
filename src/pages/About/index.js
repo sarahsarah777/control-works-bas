@@ -9,8 +9,6 @@
  =========================================================
 
 */
-
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -36,6 +34,9 @@ import footerRoutes from "../../footer.routes";
 
 // Images
 import bgImage from "../../assets/images/headerBackground.jpg";
+
+const pageTitle = "About Us"
+const pageSubTitle = "At ControlWorks BAS, we're passionate about creating smarter, more efficient buildings. We're a full-service building automation systems (BAS) company specializing in installation, setup, and ongoing service."
 
 function About() {
   return (
@@ -80,10 +81,11 @@ function About() {
                 },
               })}
             >
-              About Us
+              {pageTitle}
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-            At ControlWorks BAS, we're passionate about creating smarter, more efficient buildings. We're a full-service building automation systems (BAS) company specializing in installation, setup, and ongoing service.            </MKTypography>
+              {pageSubTitle}
+            </MKTypography>
           </Grid>
         </Container>
       </MKBox>

@@ -9,8 +9,6 @@
  =========================================================
 
 */
-
-
 // @mui icons
 import EngineeringIcon from '@mui/icons-material/Engineering';
 import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
@@ -28,73 +26,56 @@ import MKTypography from "../../../components/MKTypography";
 // Material Kit 2 React examples
 import DefaultInfoCard from "../../../examples/Cards/InfoCards/DefaultInfoCard";
 
+const heading = "Experience You Can Trust"
+const subheading = "We believe in the power of BAS to transform your building's operation. Our team of experienced engineers and technicians works closely with you to design, install, and maintain a customized BAS solution that optimizes comfort, efficiency, and cost savings."
+const cards = [{
+  icon: <EngineeringIcon color="primary"/>,
+  title: "Experienced Engineers",
+  description: "Our team boasts seasoned engineers with a deep understanding of BAS technology and a proven track record of designing efficient and effective systems for diverse building types.",
+}, {
+  icon: <IntegrationInstructionsIcon color="primary"/>,
+  title: "Certified Technicians",
+  description: "Our skilled technicians are certified in industry-leading BAS platforms like Siemens, Niagara, Distech, and Pelican Systems. They ensure flawless installation, seamless integration, and ongoing maintenance of your BAS.",
+}, {
+  icon: <UpdateIcon color="primary"/>,
+  title: "Dedicated Service Team",
+  description: "Our responsive service team is here to provide ongoing support and ensure your BAS operates smoothly. They are available 24/7 to address any urgent needs and troubleshoot any issues that may arise.",
+}, {
+  icon: <LaptopIcon color="primary"/>,
+  title: "Building Automation Specialists",
+  description: "Our team includes specialists dedicated to understanding your unique building needs and objectives. They work collaboratively with you to recommend the most suitable BAS solution and ensure it delivers the desired results.",
+}]
+
 function LightCards() {
   return (
   <MKBox component="section" py={12}>
     <Container>
-    <Grid item xs={12} md={8} sx={{ mb: 6 }}>
-            <MKTypography variant="h3">
-            Experience You Can Trust
-            </MKTypography>
-            <MKTypography variant="body2" opacity={0.8}>
-            We believe in the power of BAS to transform your building's operation. Our team of experienced engineers and technicians works closely with you to design, install, and maintain a customized BAS solution that optimizes comfort, efficiency, and cost savings.
-            </MKTypography>
-          </Grid>
+      <Grid item xs={12} md={8} sx={{ mb: 6 }}>
+        <MKTypography variant="h3">
+          {heading}
+        </MKTypography>
+        <MKTypography variant="body2" opacity={0.8}>
+          {subheading}
+        </MKTypography>
+      </Grid>
       <Grid container spacing={3} alignItems="center">
-          <Grid container justifyContent="flex-start"  item xs={12} lg={12}>
+        <Grid container justifyContent="flex-start"  item xs={12} lg={12}>
+          {cards.map((p, i) => (
             <Grid item xs={12} md={6}>
-              <MKBox mb={5}>
+              <MKBox mb={i < 2 ? 5 : { xs: 5, md: 0 }}>
                 <DefaultInfoCard
                   icon={<MKTypography
                     display="block"
                     variant="h3"
                     textGradient
-                  ><EngineeringIcon color="primary"/></MKTypography>}
-                  title="Experienced Engineers"
-                  description="Our team boasts seasoned engineers with a deep understanding of BAS technology and a proven track record of designing efficient and effective systems for diverse building types."
+                  >{p.icon}</MKTypography>}
+                  title={p.title}
+                  description={p.description}
                 />
               </MKBox>
             </Grid>
-            <Grid item xs={12} md={6}>
-              <MKBox mb={5}>
-                <DefaultInfoCard
-                  icon={<MKTypography
-                    display="block"
-                    variant="h3"
-                    textGradient
-                  ><IntegrationInstructionsIcon color="primary"/></MKTypography>}
-                  title="Certified Technicians"
-                  description="Our skilled technicians are certified in industry-leading BAS platforms like Siemens, Niagara, Distech, and Pelican Systems. They ensure flawless installation, seamless integration, and ongoing maintenance of your BAS."
-                />
-              </MKBox>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <MKBox mb={{ xs: 5, md: 0 }}>
-                <DefaultInfoCard
-                  icon={<MKTypography
-                    display="block"
-                    variant="h3"
-                    textGradient
-                  ><UpdateIcon color="primary"/></MKTypography>}
-                  title="Dedicated Service Team"
-                  description="Our responsive service team is here to provide ongoing support and ensure your BAS operates smoothly. They are available 24/7 to address any urgent needs and troubleshoot any issues that may arise."
-                />
-              </MKBox>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <MKBox mb={{ xs: 5, md: 0 }}>
-                <DefaultInfoCard
-                  icon={<MKTypography
-                    display="block"
-                    variant="h3"
-                    textGradient
-                  ><LaptopIcon color="primary"/></MKTypography>}
-                  title="Building Automation Specialists"
-                  description="Our team includes specialists dedicated to understanding your unique building needs and objectives. They work collaboratively with you to recommend the most suitable BAS solution and ensure it delivers the desired results."
-                />
-              </MKBox>
-            </Grid>
-          </Grid>
+          ))}
+        </Grid>
       </Grid>
     </Container>
   </MKBox>
