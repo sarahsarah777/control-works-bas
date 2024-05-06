@@ -9,8 +9,6 @@
  =========================================================
 
 */
-
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -33,6 +31,9 @@ import footerRoutes from "../../footer.routes";
 
 // Images
 import bgImage from "../../assets/images/headerBackground.jpg";
+
+const pageTitle = "Contact Us"
+const pageSubTitle = "At ControlWorks BAS, we're here to help you unlock the potential of your building with a customized solution. We have two locations for your convenience: Chino, California and Las Vegas, Nevada. We invite you to get in touch and discuss your project."
 
 function Contact() {
   return (
@@ -77,10 +78,10 @@ function Contact() {
               },
             })}
           >
-            Contact Us
+            {pageTitle}
           </MKTypography>
           <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-          At ControlWorks BAS, we're here to help you unlock the potential of your building with a customized solution. We have two locations for your convenience: Chino, California and Las Vegas, Nevada. We invite you to get in touch and discuss your project.
+            {pageSubTitle}
           </MKTypography>
         </Grid>
       </Container>

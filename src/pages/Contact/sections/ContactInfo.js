@@ -35,6 +35,31 @@ const SERVICE_ID = "service_23zzw2c";
 const TEMPLATE_ID = "template_jqv4y6h";
 const PUBLIC_KEY = "UBsw0aRCGscBuC-D0";
 
+const heading = "Contact Information"
+const subheading = "Fill up the form and our Team will get back to you within 24 hours."
+const cards = [{
+  location: "Chino, California",
+  phone: "(909) 627-7155",
+  email: "sales@controlworksbas.com",
+  address: "13720 Mountain Ave Chino, CA 91710",
+}, {
+  location: "Las Vegas, Nevada",
+  phone: "(702) 227-1760",
+  email: "sales@controlworksbas.com",
+  address: "6207 Dean Martin Dr, Las Vegas, NV 89118",
+}]
+const formTitle = "Say Hi!"
+const formSubTitle = "We'd like to talk with you."
+const form = {
+  name: "My name is",
+  namePlaceholder: "Full Name",
+  email: "Contact me at",
+  emailPlaceholder: "example@email.com",
+  message: "Your message",
+  messagePlaceholder: "I want to say that...",
+}
+const buttonText = "Send Message"
+
 function Contact() {
   const [name, setName] = useState(null);
   const [email, setEmail] = useState(null);
@@ -103,138 +128,70 @@ function Contact() {
                 >
                   <MKBox py={6} pr={6} pl={{ xs: 6, sm: 12 }} my="auto">
                     <MKTypography variant="h3" color="white" mb={1}>
-                      Contact Information
+                      {heading}
                     </MKTypography>
                     <MKTypography variant="body2" color="white" opacity={0.8} mb={3}>
-                      Fill up the form and our Team will get back to you within 24 hours.
+                      {subheading}
                     </MKTypography>
-                    <MKTypography
-                        component="span"
-                        variant="button"
-                        color="white"
-                        opacity={0.8}
-                        ml={2}
-                        fontWeight="bold"
-                      >
-                        Chino, California
-                      </MKTypography>
-                    <MKBox display="flex" p={1}>
-                      <MKTypography variant="button" color="white">
-                        <LocalPhoneIcon/>
-                      </MKTypography>
-                      <MKTypography
-                        component="span"
-                        variant="button"
-                        color="white"
-                        opacity={0.8}
-                        ml={2}
-                        fontWeight="regular"
-                      >
-                        (909) 627-7155
-                      </MKTypography>
-                    </MKBox>
-                    <MKBox display="flex" color="white" p={1}>
-                      <MKTypography variant="button" color="white">
-                        <EmailIcon />
-                      </MKTypography>
-                      <MKTypography
-                        component="span"
-                        variant="button"
-                        color="white"
-                        opacity={0.8}
-                        ml={2}
-                        fontWeight="regular"
-                      >
-                        sales@controlworksbas.com
-                      </MKTypography>
-                    </MKBox>
-                    <MKBox display="flex" color="white" p={1} mb={2}>
-                      <MKTypography variant="button" color="white">
-                        <BusinessIcon/>
-                      </MKTypography>
-                      <MKTypography
-                        component="span"
-                        variant="button"
-                        color="white"
-                        opacity={0.8}
-                        ml={2}
-                        fontWeight="regular"
-                      >
-                        13720 Mountain Ave Chino, CA 91710 
-                      </MKTypography>
-                    </MKBox>
-
-                    <MKTypography
-                        component="span"
-                        variant="button"
-                        color="white"
-                        opacity={0.8}
-                        ml={2}
-                        fontWeight="bold"
-                      >
-                        Las Vegas, Nevada
-                      </MKTypography>
-                    <MKBox display="flex" p={1}>
-                      <MKTypography variant="button" color="white">
-                        <LocalPhoneIcon/>
-                      </MKTypography>
-                      <MKTypography
-                        component="span"
-                        variant="button"
-                        color="white"
-                        opacity={0.8}
-                        ml={2}
-                        fontWeight="regular"
-                      >
-                        (702) 227-1760
-                      </MKTypography>
-                    </MKBox>
-                    <MKBox display="flex" color="white" p={1}>
-                      <MKTypography variant="button" color="white">
-                        <EmailIcon />
-                      </MKTypography>
-                      <MKTypography
-                        component="span"
-                        variant="button"
-                        color="white"
-                        opacity={0.8}
-                        ml={2}
-                        fontWeight="regular"
-                      >
-                        sales@controlworksbas.com
-                      </MKTypography>
-                    </MKBox>
-                    <MKBox display="flex" color="white" p={1}>
-                      <MKTypography variant="button" color="white">
-                        <BusinessIcon/>
-                      </MKTypography>
-                      <MKTypography
-                        component="span"
-                        variant="button"
-                        color="white"
-                        opacity={0.8}
-                        ml={2}
-                        fontWeight="regular"
-                      >
-                        6207 Dean Martin Dr, Las Vegas, NV 89118
-                      </MKTypography>
-                    </MKBox>
-
-
-                    <MKBox mt={3}>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
-                        <i className="fab fa-facebook" style={{ fontSize: "1.25rem" }} />
-                      </MKButton>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
-                        <i className="fab fa-twitter" style={{ fontSize: "1.25rem" }} />
-                      </MKButton>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
-                        <i className="fab fa-dribbble" style={{ fontSize: "1.25rem" }} />
-                      </MKButton>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
-                        <i className="fab fa-instagram" style={{ fontSize: "1.25rem" }} />
-                      </MKButton>
-                    </MKBox>
+                    {cards.map((p, i) => (
+                      <>
+                        <MKTypography
+                            component="span"
+                            variant="button"
+                            color="white"
+                            opacity={0.8}
+                            ml={2}
+                            fontWeight="bold"
+                          >
+                          {p.location}
+                        </MKTypography>
+                        <MKBox display="flex" p={1}>
+                          <MKTypography variant="button" color="white">
+                            <LocalPhoneIcon/>
+                          </MKTypography>
+                          <MKTypography
+                            component="span"
+                            variant="button"
+                            color="white"
+                            opacity={0.8}
+                            ml={2}
+                            fontWeight="regular"
+                          >
+                            {p.phone}
+                          </MKTypography>
+                        </MKBox>
+                        <MKBox display="flex" color="white" p={1}>
+                          <MKTypography variant="button" color="white">
+                            <EmailIcon />
+                          </MKTypography>
+                          <MKTypography
+                            component="span"
+                            variant="button"
+                            color="white"
+                            opacity={0.8}
+                            ml={2}
+                            fontWeight="regular"
+                          >
+                            {p.email}
+                          </MKTypography>
+                        </MKBox>
+                        <MKBox display="flex" color="white" p={1} mb={2}>
+                          <MKTypography variant="button" color="white">
+                            <BusinessIcon/>
+                          </MKTypography>
+                          <MKTypography
+                            component="span"
+                            variant="button"
+                            color="white"
+                            opacity={0.8}
+                            ml={2}
+                            fontWeight="regular"
+                          >
+                            {p.address}
+                          </MKTypography>
+                        </MKBox>
+                      </>
+                    ))}
                   </MKBox>
                 </MKBox>
               </Grid>
@@ -242,10 +199,10 @@ function Contact() {
                 <MKBox component="form" p={2} method="post">
                   <MKBox px={3} py={{ xs: 2, sm: 6 }}>
                     <MKTypography variant="h2" mb={1}>
-                      Say Hi!
+                      {formTitle}
                     </MKTypography>
                     <MKTypography variant="body1" color="text" mb={2}>
-                      We&apos;d like to talk with you.
+                      {formSubTitle}
                     </MKTypography>
                   </MKBox>
                   <MKBox pt={0.5} pb={3} px={3}>
@@ -253,8 +210,8 @@ function Contact() {
                       <Grid item xs={12} pr={1} mb={6}>
                         <MKInput
                           variant="standard"
-                          label="My name is"
-                          placeholder="Full Name"
+                          label={form.name}
+                          placeholder={form.namePlaceholder}
                           InputLabelProps={{ shrink: true }}
                           fullWidth
                           value={name}
@@ -266,8 +223,8 @@ function Contact() {
                       <Grid item xs={12} pr={1} mb={6}>
                         <MKInput
                           variant="standard"
-                          label="Contact me at"
-                          placeholder="example@email.com"
+                          label={form.email}
+                          placeholder={form.emailPlaceholder}
                           InputLabelProps={{ shrink: true }}
                           fullWidth
                           value={email}
@@ -279,8 +236,8 @@ function Contact() {
                       <Grid item xs={12} pr={1} mb={6}>
                         <MKInput
                           variant="standard"
-                          label="Your message"
-                          placeholder="I want to say that..."
+                          label={form.message}
+                          placeholder={form.messagePlaceholder}
                           InputLabelProps={{ shrink: true }}
                           fullWidth
                           multiline
@@ -302,7 +259,7 @@ function Contact() {
                       ml="auto"
                     >
                       <MKButton variant="gradient" color="info" onClick={sendEmail}>
-                        Send Message
+                        {buttonText}
                       </MKButton>
                     </Grid>
                   </MKBox>
