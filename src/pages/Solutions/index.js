@@ -9,8 +9,6 @@
  =========================================================
 
 */
-
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -35,6 +33,9 @@ import footerRoutes from "../../footer.routes";
 
 // Images
 import bgImage from "../../assets/images/headerBackground.jpg";
+
+const pageTitle = "Solutions"
+const pageSubTitle = "At ControlWorks BAS, we recognize that every building has unique needs. That's why we offer a comprehensive suite of building automation system (BAS) solutions designed to optimize comfort, efficiency, and cost savings across a variety of building types."
 
 function Solutions() {
   return (
@@ -79,10 +80,11 @@ function Solutions() {
                 },
               })}
             >
-              Solutions
+              {pageTitle}
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-            At ControlWorks BAS, we recognize that every building has unique needs. That's why we offer a comprehensive suite of building automation system (BAS) solutions designed to optimize comfort, efficiency, and cost savings across a variety of building types.            </MKTypography>
+              {pageSubTitle}
+            </MKTypography>
           </Grid>
         </Container>
       </MKBox>
