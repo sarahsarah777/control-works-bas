@@ -32,10 +32,9 @@ const cards = [{
   title: "Projects",
   description: "Installed and maintained with rigorous quality control standards",
 }, {
-  count: 24,
-  suffix: "/7",
-  title: "Support",
-  description: "To ensure your BAS continues to operate smoothly",
+  count: 2,
+  title: "Locations",
+  description: "With offices in Southern California and Las Vegas",
 }]
 
 function Stats() {
