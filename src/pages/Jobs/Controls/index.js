@@ -42,6 +42,33 @@ const SERVICE_ID = "service_23zzw2c";
 const TEMPLATE_ID = "template_lceipvj";
 const PUBLIC_KEY = "UBsw0aRCGscBuC-D0";
 
+const pageTitle = "Career Opportunities"
+const pageSubTitle = "Shape the future of intelligent buildings with a rewarding career at ControlWorks BAS. We offer exciting opportunities for passionate individuals to contribute to innovative building automation solutions."
+const heading = "Controls Engineer"
+const roleDescription = "We are seeking a talented Controls Engineer to join our growing team. In this role, you will play a key part in designing, developing, and implementing innovative building automation systems. You will work closely with engineers, technicians, and sales representatives to deliver exceptional solutions for our clients."
+const responsibilities = [
+  "Design and develop control systems for HVAC, lighting, security, and other building systems.",
+  "Program controllers using industry-standard languages.",
+  "Integrate building automation systems with existing infrastructure.",
+  "Perform testing, commissioning, and troubleshooting of control systems.",
+  "Provide technical support to internal and external stakeholders.",
+  "Stay up-to-date on the latest building automation technologies and trends.",
+]
+const qualifications = [
+  "Bachelor's degree in Electrical Engineering, Mechanical Engineering, or a closely related field.",
+  "Minimum 2+ years of experience in building automation controls or a similar field.",
+  "Strong understanding of HVAC, lighting, and other building systems.",
+  "Excellent analytical and problem-solving skills.",
+  "Effective communication and interpersonal skills.",
+  "Ability to work independently and as part of a team.",
+]
+const benefits = [
+  "Competitive salary and benefits package.",
+  "Opportunity to work on challenging and rewarding projects.",
+  "Collaborative and growth-oriented work environment.",
+  "Continuous learning and development opportunities.",
+]
+
 function Controls() {
   const [firstName, setFirstName] = useState(null);
   const [lastName, setLastName] = useState(null);
@@ -115,10 +142,10 @@ function Controls() {
                 },
               })}
             >
-              Career Opportunities
+              {pageTitle}
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-            Shape the future of intelligent buildings with a rewarding career at ControlWorks BAS. We offer exciting opportunities for passionate individuals to contribute to innovative building automation solutions.
+              {pageSubTitle}
             </MKTypography>
           </Grid>
         </Container>
@@ -139,78 +166,46 @@ function Controls() {
             </a>
             <Grid item xs={12} md={8} sx={{ mb: 6 }}>
               <MKTypography variant="h6" textTransform="uppercase" color="secondary" mt={5}>
-                Career Opportunities
+                {pageTitle}
               </MKTypography>
               <MKTypography variant="h2">
-                Controls Engineer
+                {heading}
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
                 The Role
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} mt={2}>
-                We are seeking a talented Controls Engineer to join our growing team. In this role, you will play a key part in designing, developing, and implementing innovative building automation systems. You will work closely with engineers, technicians, and sales representatives to deliver exceptional solutions for our clients.
+                {roleDescription}
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
                 Responsibilities
               </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Design and develop control systems for HVAC, lighting, security, and other building systems.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Program controllers using industry-standard languages
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Integrate building automation systems with existing infrastructure.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Perform testing, commissioning, and troubleshooting of control systems.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Provide technical support to internal and external stakeholders.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Stay up-to-date on the latest building automation technologies and trends.
-              </MKTypography>
+              {responsibilities.map((p) => (
+                <MKTypography variant="body1" opacity={0.8} ml={3}>
+                  • {p}
+                </MKTypography>
+              ))}
 
               <MKTypography variant="h5" mt={5}>
               Qualifications
               </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Bachelor's degree in Electrical Engineering, Mechanical Engineering, or a closely related field.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Minimum 2+ years of experience in building automation controls or a similar field.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Strong understanding of HVAC, lighting, and other building systems.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Excellent analytical and problem-solving skills.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Effective communication and interpersonal skills.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Ability to work independently and as part of a team.
-              </MKTypography>
+              {qualifications.map((p) => (
+                <MKTypography variant="body1" opacity={0.8} ml={3}>
+                  • {p}
+                </MKTypography>
+              ))}
 
               <MKTypography variant="h5" mt={5}>
                 Benefits
               </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Competitive salary and benefits package.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Opportunity to work on challenging and rewarding projects.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Collaborative and growth-oriented work environment.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Continuous learning and development opportunities.
-              </MKTypography>
+              {benefits.map((p) => (
+                <MKTypography variant="body1" opacity={0.8} ml={3}>
+                  • {p}
+                </MKTypography>
+              ))}
+
               <MKTypography variant="body2" opacity={0.8} mt={5}>
                 We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.
               </MKTypography>

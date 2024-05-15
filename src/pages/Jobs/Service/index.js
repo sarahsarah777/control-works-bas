@@ -42,6 +42,33 @@ const SERVICE_ID = "service_23zzw2c";
 const TEMPLATE_ID = "template_lceipvj";
 const PUBLIC_KEY = "UBsw0aRCGscBuC-D0";
 
+const pageTitle = "Career Opportunities"
+const pageSubTitle = "Shape the future of intelligent buildings with a rewarding career at ControlWorks BAS. We offer exciting opportunities for passionate individuals to contribute to innovative building automation solutions."
+const heading = "Service Technician"
+const roleDescription = "We are seeking a motivated Service Technician to join our growing team. You will be responsible for providing installation, maintenance, and repair services for our clients' building automation systems. This includes HVAC, electrical, and low voltage systems. You will play a vital role in ensuring the comfort, efficiency, and safety of our clients' buildings."
+const responsibilities = [
+  "Install, test, and commission building automation systems according to specifications.",
+  "Perform preventive maintenance and troubleshooting of HVAC, electrical, and low voltage systems.",
+  "Diagnose and repair system faults.",
+  "Respond promptly to customer service calls and resolve issues efficiently.",
+  "Maintain accurate service records and documentation.",
+  "Collaborate with internal teams (sales, engineering) to ensure customer satisfaction.",
+]
+const qualifications = [
+  "High school diploma or equivalent (technical degree or certification a plus).",
+  "Minimum 1 year of experience in building automation service, HVAC service, electrical service, or a related field.",
+  "Working knowledge of HVAC systems, electrical systems, and low voltage systems.",
+  "Strong understanding of safety protocols and procedures.",
+  "Excellent problem-solving and analytical skills.",
+  "Ability to work independently and as part of a team.",
+]
+const benefits = [
+  "Competitive salary and benefits package.",
+  "Opportunity to work on a variety of projects and expand your technical skillset.",
+  "Vehicle provided or mileage reimbursement.",
+  "Growth potential within a dynamic company.",
+]
+
 function Service() {
   const [firstName, setFirstName] = useState(null);
   const [lastName, setLastName] = useState(null);
@@ -115,10 +142,10 @@ function Service() {
                 },
               })}
             >
-              Career Opportunities
+              {pageTitle}
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-            Shape the future of intelligent buildings with a rewarding career at ControlWorks BAS. We offer exciting opportunities for passionate individuals to contribute to innovative building automation solutions.
+              {pageSubTitle}
             </MKTypography>
           </Grid>
         </Container>
@@ -139,78 +166,46 @@ function Service() {
             </a>
             <Grid item xs={12} md={8} sx={{ mb: 6 }}>
               <MKTypography variant="h6" textTransform="uppercase" color="secondary" mt={5}>
-                Career Opportunities
+                {pageTitle}
               </MKTypography>
               <MKTypography variant="h2">
-                Service Technician
+                {heading}
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
                 The Role
               </MKTypography>
               <MKTypography variant="body1" opacity={0.8} mt={2}>
-                We are seeking a motivated Service Technician to join our growing team. You will be responsible for providing installation, maintenance, and repair services for our clients' building automation systems. This includes HVAC, electrical, and low voltage systems. You will play a vital role in ensuring the comfort, efficiency, and safety of our clients' buildings.
+                {roleDescription}
               </MKTypography>
 
               <MKTypography variant="h5" mt={5}>
                 Responsibilities
               </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Install, test, and commission building automation systems according to specifications.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Perform preventive maintenance and troubleshooting of HVAC, electrical, and low voltage systems.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Diagnose and repair system faults.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Respond promptly to customer service calls and resolve issues efficiently.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Maintain accurate service records and documentation.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Collaborate with internal teams (sales, engineering) to ensure customer satisfaction.
-              </MKTypography>
+              {responsibilities.map((p) => (
+                <MKTypography variant="body1" opacity={0.8} ml={3}>
+                  • {p}
+                </MKTypography>
+              ))}
 
               <MKTypography variant="h5" mt={5}>
               Qualifications
               </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • High school diploma or equivalent (technical degree or certification a plus).
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Minimum 1 year of experience in building automation service, HVAC service, electrical service, or a related field.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Working knowledge of HVAC systems, electrical systems, and low voltage systems.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Strong understanding of safety protocols and procedures.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Excellent problem-solving and analytical skills.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Ability to work independently and as part of a team.
-              </MKTypography>
+              {qualifications.map((p) => (
+                <MKTypography variant="body1" opacity={0.8} ml={3}>
+                  • {p}
+                </MKTypography>
+              ))}
 
               <MKTypography variant="h5" mt={5}>
                 Benefits
               </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Competitive salary and benefits package.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Opportunity to work on a variety of projects and expand your technical skillset.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Vehicle provided or mileage reimbursement.
-              </MKTypography>
-              <MKTypography variant="body1" opacity={0.8} ml={3}>
-                • Growth potential within a dynamic company.
-              </MKTypography>
+              {benefits.map((p) => (
+                <MKTypography variant="body1" opacity={0.8} ml={3}>
+                  • {p}
+                </MKTypography>
+              ))}
+
               <MKTypography variant="body2" opacity={0.8} mt={5}>
                 We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.
               </MKTypography>
