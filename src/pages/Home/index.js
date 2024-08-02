@@ -34,7 +34,7 @@ import footerRoutes from "../../footer.routes";
 import bgImage from "../../assets/images/headerBackground.jpg";
 
 const pageTitle = "ControlWorks"
-const pageSubTitle = "ControlWorks is your trusted partner for building automation systems (BAS). We design, install, and maintain customized BAS solutions that optimize comfort, efficiency, and cost savings for your unique building needs."
+const pageSubTitle = "ControlWorks is your trusted partner for Building Automation Systems (BAS). We design, install, and maintain customized BAS solutions that optimize comfort, efficiency, and cost savings for your unique building needs."
 
 function Home() {
   return (

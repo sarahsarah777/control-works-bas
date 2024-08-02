@@ -36,7 +36,7 @@ import footerRoutes from "../../footer.routes";
 import bgImage from "../../assets/images/headerBackground.jpg";
 
 const pageTitle = "About Us"
-const pageSubTitle = "At ControlWorks BAS, we're passionate about creating smarter, more efficient buildings. We're a full-service building automation systems (BAS) company specializing in installation, setup, and ongoing service."
+const pageSubTitle = "At ControlWorks BAS, we're passionate about creating smarter, more efficient buildings. We're a full-service Building Automation Systems (BAS) company specializing in installation, setup, and ongoing service."
 
 function About() {
   return (

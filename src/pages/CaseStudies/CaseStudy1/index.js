@@ -42,7 +42,7 @@ const challenges = [{
   challenge: "Ensuring air quality",
   description: "Labs often utilize hazardous materials, so proper ventilation and air filtration are crucial.",
 }, {
-  challenge: "Fume hood control",
+  challenge: "Critical environment control",
   description: "Fume hoods require specific airflow patterns to safely capture and exhaust hazardous fumes.",
 }, {
   challenge: "Real-time monitoring and data collection",
@@ -59,7 +59,7 @@ const solutions = [{
   solution: "Siemens Desigo Optic software",
   description: "A central hub for data collection, visualization, and analysis, empowering real-time monitoring and informed decision-making.",
 }, {
-  solution: "Fume hood integration",
+  solution: "Critical environment integration",
   description: "Ensures proper airflow for safety and efficient fume exhaust.",
 }, {
   solution: "Customizable alarms",

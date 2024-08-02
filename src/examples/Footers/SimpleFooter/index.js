@@ -111,7 +111,7 @@ function SimpleFooter() {
               <MKBox component="img" src={logoText} alt="logo" width="200px"/>
             </MKTypography>
             <MKTypography variant="body1" fontWeight="bold" mt={6} sx={{ fontSize: "1.125rem" }} opacity={0.8}>
-              To Create & Keep Customers
+              Create & Keep Customers
             </MKTypography>
           </Grid>
         </Grid>

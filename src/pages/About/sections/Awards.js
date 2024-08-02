@@ -46,11 +46,29 @@ const cards = [{
 }, {
   title: "Gold Award - for achieving sales volume goal and outstanding sales growth",
   description: "Siemens 2009",
+}, {  
+  title: "Exceptional Sales Performance - Platinum Level Sales Volume",
+  description: "Siemens 2009",
 }, {
   title: "Cash is King Award",
   description: "Siemens 2009",
 }, {
+  title: "Dealer of the Year",
+  description: "Siemens 2009",
+}, {
+  title: "Gold Award - for achieving sales volume goal and outstanding sales growth",
+  description: "Siemens 2007",
+}, {
+  title: "Exceptional Sales Performance - Gold Level Sales Volume",
+  description: "Siemens 2007",
+}, {
   title: "President’s Circle Award - In recognition of outstanding sales growth",
+  description: "Staefa Control System 2004",
+}, {
+  title: "Exceptional Sales Performance - Silver Level Sales Volume",
+  description: "Staefa Control System 2004",
+}, {
+  title: "Gold Award - for achieving sales volume goal and outstanding sales growth",
   description: "Staefa Control System 2004",
 }]
 
