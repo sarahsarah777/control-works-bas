@@ -30,7 +30,7 @@ import HorizontalTeamCard from "../../../examples/Cards/TeamCards/HorizontalTeam
 // Images
 import profile from "../../../assets/images/about/profile.png";
 
-const heading = "Meet the Sales Team"
+const heading = "Meet the Team"
 const cards = [{
   image: profile,
   name: "David Swanson",
@@ -48,9 +48,19 @@ const cards = [{
   location: "Chino, CA",
 }, {
   image: profile,
+  name: "Mike Thielman",
+  position: "Service Ops Manager",
+  location: "Las Vegas, NV",
+}, {
+  image: profile,
   name: "Ben Swanson",
   position: "Sales",
   location: "Chino, CA",
+}, {
+  image: profile,
+  name: "Juan Hoare",
+  position: "Construction Ops Manager",
+  location: "Las Vegas, NV",
 }, {
   image: profile,
   name: "Rick Cummings",

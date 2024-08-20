@@ -45,7 +45,7 @@ const cards = [{
 }, {
   location: "Las Vegas, Nevada",
   phone: "(702) 227-1760",
-  email: "sales@controlworksbas.com",
+  // email: "sales@controlworksbas.com",
   address: "6207 Dean Martin Dr, Las Vegas, NV 89118",
 }]
 const formTitle = "Say Hi!"
@@ -160,21 +160,23 @@ function Contact() {
                             {p.phone}
                           </MKTypography>
                         </MKBox>
-                        <MKBox display="flex" color="white" p={1}>
-                          <MKTypography variant="button" color="white">
-                            <EmailIcon />
-                          </MKTypography>
-                          <MKTypography
-                            component="span"
-                            variant="button"
-                            color="white"
-                            opacity={0.8}
-                            ml={2}
-                            fontWeight="regular"
-                          >
-                            {p.email}
-                          </MKTypography>
-                        </MKBox>
+                        {p.email && (
+                          <MKBox display="flex" color="white" p={1}>
+                            <MKTypography variant="button" color="white">
+                              <EmailIcon />
+                            </MKTypography>
+                            <MKTypography
+                              component="span"
+                              variant="button"
+                              color="white"
+                              opacity={0.8}
+                              ml={2}
+                              fontWeight="regular"
+                            >
+                              {p.email}
+                            </MKTypography>
+                          </MKBox>
+                        )}
                         <MKBox display="flex" color="white" p={1} mb={2}>
                           <MKTypography variant="button" color="white">
                             <BusinessIcon/>
