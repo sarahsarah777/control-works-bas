@@ -32,9 +32,9 @@ import panel from "../../../assets/images/services/panel.png";
 
 const card = {
   image: panel,
-  title: "Tailored for You and Your Technology",
-  description: "At ControlWorks BAS, we understand that a one-size-fits-all approach doesn't work in building automation. That's why we offer a variety of leading BAS platforms to ensure your system seamlessly integrates with your existing infrastructure and delivers the results you need.",
-  link: "../contact",
+  title: "Submit A Service Request Online",
+  description: "Experiencing an issue? We're here to help! Share your details below and a brief description of the problem, and one of our team members will get back to you as soon as possible.",
+  link: "https://docs.google.com/forms/d/e/1FAIpQLSc7kFMfy0TiNngssWds0pkppLA2esK9rFOgStITrGFvrtHfGg/viewform?usp=header",
 }
 const cards = [{
   icon: <DesignServicesIcon color="primary"/>,
@@ -65,10 +65,10 @@ function InfoCard() {
               title={card.title}
               description={card.description}
               action={{
-                type: "internal",
+                type: "external",
                 route: card.link,
                 color: "info",
-                label: "find out more",
+                label: "Request Service",
               }}
             />
           </Grid>
